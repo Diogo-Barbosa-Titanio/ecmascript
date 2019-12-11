@@ -96,5 +96,18 @@
                 </div>
             </div>
         </div>
+
+    <div id="app">
+            <example-component></example-component>
+    </div>
+
+    <script src="{{asset('js/app.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            console.log('Versão jQuery: ' +  jQuery.fn.jquery );
+        });
+    </script>
+
+
     </body>
 </html>

@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/teste', function () {
-    echo 'Laravel ecmascript';
-});
+Route::get('/principal','AluraTyperController@principal');
