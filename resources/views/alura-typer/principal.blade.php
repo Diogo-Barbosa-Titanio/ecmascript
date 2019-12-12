@@ -10,12 +10,7 @@
 <div class="container">
     <h1 class="center">Alura Typer</h1>
     <p class="frase center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque felis id justo varius, at tincidunt
-        odio
-        egestas. Etiam sagittis lectus vel ante consequat tristique. Mauris in lacus vel massa mattis vestibulum id vel
-        nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur auctor
-        dapibus tortor, ac interdum sem. Pellentesque at nibh magna. Phasellus laoreet placerat blandit. Ut arcu odio,
-        viverra et dui non, eleifend laoreet ligula.
+       Esta frase tem oito belas e grandiosas palavras.
     </p>
 
     <ul class="informacoes center">
