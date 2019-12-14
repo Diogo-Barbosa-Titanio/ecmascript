@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Alura Typer</title>
     <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="{{asset('storage/alura-typer/css/libs/materialize.min.css')}}" media="all">
-    <link rel="stylesheet" href="{{asset('storage/alura-typer/css/libs/google-fonts.css')}}" media="all">
-    <link rel="stylesheet" href="{{asset('storage/alura-typer/css/estilos.css')}}" media="all">
+    <link rel="stylesheet" href="{{asset('alura-typer/css/libs/materialize.min.css')}}" media="all">
+    <link rel="stylesheet" href="{{asset('alura-typer/css/libs/google-fonts.css')}}" media="all">
+    <link rel="stylesheet" href="{{asset('alura-typer/css/estilos.css')}}" media="all">
 </head>
 <body>
 <div class="container">
@@ -22,6 +22,8 @@
 
     <div class="botoes">
         <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a>
+        <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">assignment</i></a>
+        <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">shuffle</i></a>
     </div>
 
     <ul class="center">
@@ -30,7 +32,7 @@
     </ul>
 
     <section class="placar">
-            <h3 class="center"></h3>
+            <h3 class="center">Placar</h3>
         <table class="centered bordered">
             <thead>
                 <tr>
@@ -53,7 +55,9 @@
 
 
 <script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('storage/alura-typer/js/main.js')}}"></script>
+<script src="{{asset('alura-typer/js/main.js')}}"></script>
+<script src="{{asset('alura-typer/js/placar.js')}}"></script>
+<script src="{{asset('alura-typer/js/frase.js')}}"></script>
 
 </body>
 </html>
