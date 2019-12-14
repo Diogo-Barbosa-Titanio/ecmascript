@@ -13,6 +13,11 @@
     <h1 class="center">Alura Typer</h1>
     <p class="frase center">Esta frase tem oito belas e grandiosas palavras.</p>
 
+    <div class="center">
+        <img src="{{asset('alura-typer/img/spinner.gif')}}" alt="Carregando..." id="spinner">
+        <p id="erro">Ocorreu um erro, por favor tente novamente.</p>
+    </div>
+
     <ul class="informacoes center">
         <li><i class="small material-icons icones">description</i><span id="tamanho-frase">5</span> palavras</li>
         <li><i class="small material-icons icones">query_builder</i><span id="tempo-digitacao">3</span> segundos</li>
@@ -24,6 +29,10 @@
         <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a>
         <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">assignment</i></a>
         <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">shuffle</i></a>
+        <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">repeat_one</i></a>
+        <input type="number" id="frase-id" min="0">
+        <a id="botao-sync" class="btn-floating btn-large waves-effect waves-light yellow right"><i class="material-icons">swap_vert</i></a>
+
     </div>
 
     <ul class="center">

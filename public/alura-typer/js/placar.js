@@ -2,6 +2,41 @@ $("#botao-placar").on("click",function () {
     mostraPlacar();
 });
 
+$("#botao-sync").on("click",function () {
+    sicronizaPlacar();
+});
+
+function sicronizaPlacar() {
+    var placar = [];
+    var linhas = $("tbody > tr");
+
+    linhas.each(function () {
+        var usuario = $(this).find("td:nth-child(1)");
+        var palavras = $(this).find("td:nth-child(2)");
+
+        var score = {
+            usuario: usuario.text(),
+            pontos: palavras.text()
+        };
+
+        placar.push(score);
+
+    });
+
+
+    var dados = {
+      placar: placar
+    };
+
+    $.ajax({
+        url: 'http://localhost:3000/placar',
+        type: 'POST',
+        data: dados,
+        success: function () {
+            console.log("Salvou o placar no servidor")
+        }
+    });
+}
 
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
