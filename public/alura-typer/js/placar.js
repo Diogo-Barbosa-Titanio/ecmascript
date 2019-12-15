@@ -97,3 +97,22 @@ function removerLinha() {
 function mostraPlacar() {
       $(".placar").stop().slideToggle(600);
 }
+
+function atualizarPlacar() {
+    $.ajax({
+       url: "http://localhost:3000/placar",
+       type: "GET",
+       dataType: "JSON",
+       success: function (data) {
+            $(data).each(function () {
+                var linha = novaLinha(this.usuario, this.pontos);
+
+                linha.find(".botao-remover").click(removerLinha);
+                $("tbody").append(linha);
+            });
+       },
+       error: function (xhr, er) {
+            console.log("Problemas ocorreram ao tentar trazer os dados.");
+       }
+    });
+}

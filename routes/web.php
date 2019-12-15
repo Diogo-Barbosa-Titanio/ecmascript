@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/principal','AluraTyperController@principal');
+Route::get('/index', function () {
+    return view('alura-typer/index');
+});

@@ -7,6 +7,8 @@ $(document).ready(function () {
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").on("click", reiniciaJogo);
+
+    atualizarPlacar();
 });
 
 function atualizaTempoInicial(tempo) {

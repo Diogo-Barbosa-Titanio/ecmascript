@@ -39,7 +39,7 @@ function fraseAleatoria() {
      });*/
 
     $.ajax({
-        url: "http://localhost:3000/frases",
+        url: "http://localhost:3001/frases",
         dataType: "JSON",
         type: "GET",
         beforeSend: function () {
